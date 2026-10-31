@@ -1,0 +1,131 @@
+/* Theme Colors */
+:root {
+    --primary: #102a43;
+    --accent: #f5b400;
+    --background: #f4f6f9;
+    --text: #222;
+}
+
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--background);
+    color: var(--text);
+    margin: 0;
+}
+
+/* Navigation Bar */
+header {
+    background-color: var(--primary);
+    color: white;
+    text-align: center;
+    padding: 15px;
+    position: sticky;
+    top: 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+}
+
+nav a:hover {
+    color: var(--accent);
+}
+
+/* Sections */
+section {
+    padding: 25px;
+    margin: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px #ccc;
+}
+
+/* Hero Section */
+#home {
+    background: linear-gradient(to right, #102a43, #2874a6);
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+/* Buttons */
+button {
+    background-color: var(--accent);
+    color: #102a43;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: orange;
+}
+
+/* Tables */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+th {
+    background-color: var(--primary);
+    color: white;
+}
+
+th, td {
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #ccc;
+}
+
+/* Form */
+form {
+    padding: 20px;
+    background-color: #f4f6f9;
+    border-radius: 10px;
+}
+
+input, select {
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+}
+
+/* Booking Summary */
+aside {
+    background-color: #fff4cc;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+/* Guidelines */
+article {
+    background-color: #f4f6f9;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 8px;
+}
+
+/* Footer */
+footer {
+    background-color: var(--primary);
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+body {
+    background-color: lightblue;
+}
+
+header {
+    background-color: navy;
+    color: white;
+}
