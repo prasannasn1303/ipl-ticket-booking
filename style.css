@@ -129,3 +129,115 @@ header {
     background-color: navy;
     color: white;
 }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f4f8;
+    color: #222;
+}
+
+header {
+    background-color: #102a56;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+header h1 {
+    margin-bottom: 15px;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+    background-color: #e63946;
+    padding: 8px 20px;
+    border-radius: 5px;
+}
+
+main {
+    width: 90%;
+    max-width: 600px;
+    margin: 35px auto;
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+    color: #102a56;
+    margin-bottom: 25px;
+}
+
+h3 {
+    color: #102a56;
+    margin: 20px 0 15px;
+}
+
+form label {
+    display: inline-block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="number"],
+select {
+    width: 100%;
+    padding: 11px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+input:focus,
+select:focus {
+    outline: none;
+    border-color: #e63946;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    margin: 10px 5px;
+}
+
+button {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #e63946;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #b91c2b;
+}
+
+button[type="reset"] {
+    background-color: #102a56;
+}
+
+button[type="reset"]:hover {
+    background-color: #071a38;
+}
+
+footer {
+    text-align: center;
+    background-color: #102a56;
+    color: white;
+    padding: 15px;
+}
