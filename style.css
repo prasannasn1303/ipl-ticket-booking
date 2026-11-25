@@ -149,95 +149,102 @@ header {
     padding: 25px;
 }
 
-header h1 {
-    margin-bottom: 15px;
-}
+/* IPL Booking Form Styling */
 
-header a {
-    color: white;
-    text-decoration: none;
-    background-color: #e63946;
-    padding: 8px 20px;
-    border-radius: 5px;
-}
-
-main {
-    width: 90%;
-    max-width: 600px;
-    margin: 35px auto;
-    background-color: white;
+#booking-form {
+    max-width: 650px;
+    margin: 40px auto;
     padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.12);
 }
 
-h2 {
+#booking-form h2 {
     text-align: center;
     color: #102a56;
     margin-bottom: 25px;
 }
 
-h3 {
-    color: #102a56;
-    margin: 20px 0 15px;
+#booking-form h3 {
+    color: #e63946;
+    margin: 20px 0 12px;
 }
 
-form label {
+#booking-form label {
+    font-weight: bold;
     display: inline-block;
     margin-bottom: 8px;
-    font-weight: bold;
 }
 
-input[type="text"],
-input[type="email"],
-input[type="tel"],
-input[type="number"],
-select {
+#booking-form input[type="text"],
+#booking-form input[type="email"],
+#booking-form input[type="tel"],
+#booking-form input[type="number"],
+#booking-form select {
     width: 100%;
-    padding: 11px;
-    margin-bottom: 15px;
+    padding: 12px;
+    margin-bottom: 18px;
     border: 1px solid #ccc;
-    border-radius: 5px;
+    border-radius: 6px;
     font-size: 15px;
 }
 
-input:focus,
-select:focus {
+#booking-form input:focus,
+#booking-form select:focus {
     outline: none;
     border-color: #e63946;
 }
 
-input[type="radio"],
-input[type="checkbox"] {
+#booking-form input[type="radio"],
+#booking-form input[type="checkbox"] {
     margin: 10px 5px;
 }
 
-button {
-    padding: 12px 20px;
+#booking-form button {
+    padding: 12px 22px;
+    margin: 10px 5px 0 0;
     border: none;
-    border-radius: 5px;
+    border-radius: 6px;
     background-color: #e63946;
     color: white;
-    font-size: 15px;
     cursor: pointer;
-    margin-top: 10px;
 }
 
-button:hover {
+#booking-form button:hover {
     background-color: #b91c2b;
 }
 
-button[type="reset"] {
+#booking-form button[type="reset"] {
     background-color: #102a56;
 }
 
-button[type="reset"]:hover {
+#booking-form button[type="reset"]:hover {
     background-color: #071a38;
 }
 
-footer {
-    text-align: center;
-    background-color: #102a56;
+@media (max-width: 600px) {
+    #booking-form {
+        width: 95%;
+        padding: 20px;
+    }
+}
+
+#toast {
+    visibility: hidden;
+    min-width: 250px;
+    background-color: #222;
     color: white;
+    text-align: center;
     padding: 15px;
+    border-radius: 8px;
+    position: fixed;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
+}
+
+#toast.show {
+    visibility: visible;
 }

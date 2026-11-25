@@ -1,6 +1,7 @@
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,7 +19,7 @@
             <a href="#matches">Matches</a> |
             <a href="#booking">Book Ticket</a> |
             <a href="#mybookings">My Bookings</a> |
-            <a href="#guidelines">Guidelines</a>
+            <a href="#guidelines">Guidelines</a> |
             <a href="booking.html">Book Now</a>
         </nav>
     </header>
@@ -27,15 +28,14 @@
 
     <section id="home">
         <h1>Experience The Stadium Energy Live!</h1>
+
         <p>Book your tickets and enjoy the excitement of IPL 2026.</p>
 
         <a href="#matches">
             <button>View Schedule</button>
         </a>
 
-        <a href="#booking">
-            <button>Book Ticket</button>
-        </a>
+        <button onclick="bookTicket()">Book Ticket</button>
     </section>
 
     <hr>
@@ -50,6 +50,7 @@
         </p>
 
         <h3>Popular Teams</h3>
+
         <ul>
             <li>Chennai Super Kings (CSK)</li>
             <li>Mumbai Indians (MI)</li>
@@ -60,13 +61,14 @@
         </ul>
 
         <h3>Major Match Venues</h3>
+
         <ul>
             <li>M. Chinnaswamy Stadium, Bengaluru</li>
             <li>Wankhede Stadium, Mumbai</li>
             <li>MA Chidambaram Stadium, Chennai</li>
             <li>Eden Gardens, Kolkata</li>
-            <li> Arun Jaitley Stadium, Delhi</li>
-            <li> Rajiv Gandhi International Stadium, Hyderabad</li>
+            <li>Arun Jaitley Stadium, Delhi</li>
+            <li>Rajiv Gandhi International Stadium, Hyderabad</li>
         </ul>
     </section>
 
@@ -112,7 +114,9 @@
                     <td>₹800</td>
                     <td>₹1500</td>
                     <td>₹3000</td>
-                    <td><a href="#booking"><button>Book</button></a></td>
+                    <td>
+                        <button onclick="bookTicket()">Book</button>
+                    </td>
                 </tr>
 
                 <tr>
@@ -123,7 +127,9 @@
                     <td>₹1000</td>
                     <td>₹2000</td>
                     <td>₹4000</td>
-                    <td><a href="#booking"><button>Book</button></a></td>
+                    <td>
+                        <button onclick="bookTicket()">Book</button>
+                    </td>
                 </tr>
 
                 <tr>
@@ -134,7 +140,9 @@
                     <td>₹900</td>
                     <td>₹1800</td>
                     <td>₹3500</td>
-                    <td><a href="#booking"><button>Book</button></a></td>
+                    <td>
+                        <button onclick="bookTicket()">Book</button>
+                    </td>
                 </tr>
 
                 <tr>
@@ -145,7 +153,9 @@
                     <td>₹850</td>
                     <td>₹1600</td>
                     <td>₹3200</td>
-                    <td><a href="#booking"><button>Book</button></a></td>
+                    <td>
+                        <button onclick="bookTicket()">Book</button>
+                    </td>
                 </tr>
             </tbody>
         </table>
@@ -159,6 +169,7 @@
         <form action="#" method="post">
 
             <label for="match">Select Match:</label><br>
+
             <select id="match" name="match" required>
                 <option value="">Choose Match</option>
                 <option>RCB vs CSK</option>
@@ -170,6 +181,7 @@
             <br><br>
 
             <label for="stand">Stand Category:</label><br>
+
             <select id="stand" name="stand" required>
                 <option value="">Select Stand</option>
                 <option>General</option>
@@ -180,27 +192,37 @@
             <br><br>
 
             <label for="quantity">Number of Tickets:</label><br>
-            <input type="number" id="quantity" name="quantity" min="1" max="10" required>
+
+            <input type="number" id="quantity" name="quantity"
+                min="1" max="10" required>
 
             <br><br>
 
             <label for="name">Full Name:</label><br>
-            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+            <input type="text" id="name" name="name"
+                placeholder="Enter your name" required>
 
             <br><br>
 
             <label for="email">Email Address:</label><br>
-            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+            <input type="email" id="email" name="email"
+                placeholder="Enter your email" required>
 
             <br><br>
 
             <label for="phone">Phone Number:</label><br>
-            <input type="tel" id="phone" name="phone" placeholder="Enter phone number" pattern="[0-9]{10}" required>
+
+            <input type="tel" id="phone" name="phone"
+                placeholder="Enter phone number"
+                pattern="[0-9]{10}" required>
 
             <br><br>
 
-        </form>
+            <button type="submit">Confirm Booking</button>
 
+        </form>
     </section>
 
     <hr>
@@ -225,6 +247,7 @@
     </section>
 
     <hr>
+
     <section id="guidelines">
         <h2>Match Guidelines</h2>
 
@@ -259,6 +282,12 @@
     <footer>
         <p>&copy; 2026 IPL Ticket Booking. All Rights Reserved.</p>
     </footer>
+
+    <!-- Toast Notification -->
+    <div id="toast"></div>
+
+    <!-- JavaScript File -->
+    <script src="app.js"></script>
 
 </body>
 </html>
