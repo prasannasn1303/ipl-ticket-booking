@@ -248,3 +248,216 @@ header {
 #toast.show {
     visibility: visible;
 }
+
+/* Booking Summary Card */
+
+#summary {
+    background-color: #f2f2f2;
+    border: 2px solid black;
+    padding: 20px;
+    margin-top: 30px;
+    width: 300px;
+    border-radius: 10px;
+}
+
+#summary h2 {
+    color: darkblue;
+}
+
+#summary h3 {
+    color: green;
+}
+
+/* Toast Notification */
+
+#toast {
+    visibility: hidden;
+    min-width: 250px;
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    border-radius: 8px;
+    position: fixed;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
+}
+
+#toast.show {
+    visibility: visible;
+}
+
+
+/* Activity 8: Responsive Layout */
+
+/* Header using Flexbox */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: #202020;
+    color: white;
+}
+
+.logo h1 {
+    margin: 0;
+}
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.nav-menu a {
+    color: white;
+    text-decoration: none;
+}
+
+.nav-menu a:hover {
+    color: orange;
+}
+
+/* Hamburger Button */
+
+.menu-toggle {
+    display: none;
+    font-size: 25px;
+    background: none;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* Match Cards using CSS Grid */
+
+.match-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin: 20px 0;
+}
+
+.match-card {
+    background-color: #f2f2f2;
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.match-card h3 {
+    color: darkblue;
+}
+
+.match-card button {
+    background-color: darkblue;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+/* List View */
+
+.list-view {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.list-view .match-card {
+    width: auto;
+}
+
+/* Guidelines using CSS Grid */
+
+.guidelines-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.guideline-card {
+    background-color: #f2f2f2;
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+/* View Buttons */
+
+.view-buttons {
+    margin: 20px 0;
+}
+
+.view-buttons button {
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+/* Tablet Layout */
+
+@media screen and (max-width: 768px) {
+
+    .header {
+        flex-wrap: wrap;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        padding: 15px 0;
+    }
+
+    .nav-menu.active {
+        display: flex;
+    }
+
+    .match-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .guidelines-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+/* Mobile Layout */
+
+@media screen and (max-width: 480px) {
+
+    .header {
+        padding: 15px;
+    }
+
+    .logo h1 {
+        font-size: 20px;
+    }
+
+    .match-card {
+        padding: 15px;
+    }
+
+    #booking {
+        padding: 15px;
+    }
+
+    #summary {
+        width: auto;
+    }
+
+    .view-buttons button {
+        padding: 8px 12px;
+    }
+
+}
